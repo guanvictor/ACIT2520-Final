@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{{> header}}
+
+<body>
+
+<form method="POST" action="/pictures">
+    <div class="form-group">
+        <label for="image_gallery">Search for a Picture</label>
+        <input type="text" class="form-control" name='image_gallery' id="image_gallery" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+    <p class="output" id="output">{{output}}</p>
+</form>
+
+
+
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{{> header}}
+
+<body>
+
+<form method="POST" action="/cards">
+    <div class="form-group">
+        <label for="numberofcards">Number of cards:</label>
+        <input type="text" class="form-control" name='numberofcards' id="numberofcards" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+    <p class="output" id="output">{{output}}</p>
+</form>
+
+
+</body>
+</html>
