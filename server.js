@@ -56,9 +56,15 @@ app.post('/pictures', urlencodedParser, async (request, response) => {
 
         let gallery = await nasa.get_gallery(request.body.image_gallery);
 
+        let objects = [];
+
+        for (var i = 0; i < gallery.length; i ++) {
+            objects[i] = { image: gallery[i], link: gallery[i] };
+        }
+
         console.log(gallery);
         response.render('nasa_api.hbs', {
-            output:gallery
+            objects: objects
         });
     }catch (e) {
         response.render('nasa_api.hbs', {
