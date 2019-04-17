@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{{> header}}
+
+<body>
+
+<form method="POST" action="/picture">
+    <div class="form-group">
+        <label for="picture_input">Picture Target:</label>
+        <input type="text" class="form-control" name='picture_input' id="picture_input" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+    <img src={{output}} alt="">
+    <!--<p class="output" id="output">{{output}}</p>-->
+</form>
+
+
+<!--<form id="weather-form" method="POST" action="/weather">-->
+<!--<p>City:</p> <br>-->
+<!--<input type="text" id="userInput" class="userInput" name="country" placeholder="Toronto">-->
+<!--<input type="submit" value="Submit" class="breach-submit">-->
+<!--</form>-->
+
+
+</body>
+</html>

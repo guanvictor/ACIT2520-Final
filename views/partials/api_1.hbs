@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{{> header}}
+
+<body>
+
+<form method="POST" action="/weather">
+    <div class="form-group">
+        <label for="city_input">Country:</label>
+        <input type="text" class="form-control" name='country_input' id="country_input" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+    <p class="output" id="output">{{output}}</p>
+</form>
+
+
+<!--<form id="weather-form" method="POST" action="/weather">-->
+<!--<p>City:</p> <br>-->
+<!--<input type="text" id="userInput" class="userInput" name="country" placeholder="Toronto">-->
+<!--<input type="submit" value="Submit" class="breach-submit">-->
+<!--</form>-->
+
+
+</body>
+</html>
